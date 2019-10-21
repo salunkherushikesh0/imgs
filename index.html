@@ -1,0 +1,29 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+            
+            var MyClass = function(firstname,lastname)
+            { 
+                this.firstname=firstname;
+                this.lastname=lastname;
+            }
+
+            var m=new MyClass("VFISLK","Software");
+            console.log(m);
+            MyClass.prototype={
+                printFirstName:function(){console.log(this.firstname);},
+                printLastName:function(){console.log(this.lastname);}
+            };
+            console.log(m.printFirstName(),m.printLastName());
+            
+            /*
+            //Two ways of creating objects
+            var obj={ x=10,y=20};
+            var obj2=new Object();
+            obj2.x=10;
+            obj2.y=20;
+            */
+        </script>
+    </body>
+</html>
